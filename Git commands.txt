@@ -1,0 +1,59 @@
+
+ls -a             		-> show me all the hidden files.
+ls foldername    		-> to see what is inside the folder
+touch filename.txt-		->to create a new file
+cat filename      		-> whatever things are available to names.txt file
+
+git init          		->initialize a empty git repository(folder) where all the changes will be stored.
+git status 	  		->to see what task are pending and what done
+git add filename  		-> add the untracked files to a separate directory to commit
+git add .			-> add all files
+git commit -m "message" 	->to commit with some message
+git restore 			-> discard changes in a file
+git restore --staged filename -> the file through out from the stage
+
+git log			      -> see all the commits
+git log --oneline             -> show all commits in shorter form
+git log --graph --oneline --all-> graph view of all the commits and changes
+
+rm -rf filename    	      -> delete file
+git reset commit-no	      -> what ever commit made after this commitno will be removed and all the files are created or modified by those will be in upstaged area
+git stash		      -> to store all the changes in a separate file what we don't want to commit and also don't want to loose
+git stash pop		      ->to bring the uncommitted changes in staging area
+git stash clear               -> clear the stash area
+
+git remote add origin(name of url by convention) url     -> add your local repo to remote(GitHub)
+git remote -v                 ->to show  all the  url attached to this folder
+git push origin main(branch name) -> → Push the commits from the local branch to the corresponding branch on the remote repository.
+git branch branchname		->creating new branch
+git checkout branchname		->head pointing to the new branch
+git merge branchname            -> add branch(your  code) to the main branch
+git switch branch-name		->Switch to an existing branch.
+git switch -c branch-name	->Create and switch to a new branch.
+git branch -d branch-name	->Delete a branch (only if it has been merged).
+git branch -D branch-name	->Force delete a branch.
+git branch -m new-name	        ->Rename the current branch.
+git branch -m old-name new-name	->Rename another branch.
+git branch -a	    		 ->Show all local and remote branches.
+git branch -r			 ->Show only remote branches.
+git fetch			 -> download changes but not merge
+git pull/git pull origin main	 -> Take the latest changes 
+		
+git clone url(own repo url)	->copy someone code to your own branch url
+git remote add upstream url     ->add upstream url
+
+
+Workflow-
+Create a branch on your computer.
+Write code.
+Commit your changes.
+Push the branch to GitHub.
+Open a pull request.
+
+
+* You can never commit on the main branch
+* Head is a pointer that all the new commits will be made will added to the head
+* Fork- copy the code to your own account
+* Upstream url- from where you forked the project
+* Local branch = A copy of the document on your laptop.
+* Remote branch = A copy of the document stored in the cloud (GitHub).
